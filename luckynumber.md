@@ -43,6 +43,7 @@ our job is to land at .text:0804901D
 .text:08049038                 int     80h            
 ```
 
+```
 if we go with the wrong scenario:
 there is an input like 66
 the program puts the '6' to AL and '6' to BL
@@ -71,3 +72,4 @@ and  it compares bl to 0x38
 then we land in the "good job !"
 
 the right answer is '88' to match the result
+```
