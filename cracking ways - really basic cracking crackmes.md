@@ -399,10 +399,10 @@ so let's recap all the instructions we need to understand:
  jne, compare eax to 0 or non-0 then follow where it should jmp or continue
  test, test if the register is 0 or non-0
 
-#Appendix
+# Appendix
 
 here are interesting Wikipedia articles for beginners:
-https://en.wikipedia.org/wiki/Stripped_binary
+[https://en.wikipedia.org/wiki/Stripped_binary]
 https://en.wikipedia.org/wiki/Debug_symbol
 https://en.wikipedia.org/wiki/Symbol_table
 https://en.wikipedia.org/wiki/Linux_Standard_Base
