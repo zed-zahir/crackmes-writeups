@@ -24,7 +24,7 @@ What can we learn from this output? let's deconstruct it:
 * not stripped
 
 * ELF 64-bit LSB shared object
- - ELF 64-bit
+** ELF 64-bit
   + this means that it's an ELF file Format and you can find more information on the appendix, I will link all the Wikipedia articles of these maybe if it's esoteric to you.
   + And 64-bit means the ELF Format is the 64-bit ELF architecture.
  - LSB executable and LSB shared objects
