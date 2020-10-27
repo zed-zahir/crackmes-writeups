@@ -390,7 +390,7 @@ it's mainly if eax is 0 or 1, it will either print the first string or the secon
 ```
 
 so let's recap all the instructions we need to understand:
- 
+```
  push, it mainly pushes to the stack, generally variable
  mov, moves data to register or to the stack
  sub, subtract either a value or rbp to allocate variables
@@ -398,7 +398,7 @@ so let's recap all the instructions we need to understand:
  call, call a function
  jne, compare eax to 0 or non-0 then follow where it should jmp or continue
  test, test if the register is 0 or non-0
-
+```
 # Appendix
 
 here are interesting Wikipedia articles for beginners:
