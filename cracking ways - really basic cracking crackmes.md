@@ -25,24 +25,24 @@ What can we learn from this output? let's deconstruct it:
 
 * ELF 64-bit LSB shared object
 ** ELF 64-bit
-  + this means that it's an ELF file Format and you can find more information on the appendix, I will link all the Wikipedia articles of these maybe if it's esoteric to you.
-  + And 64-bit means the ELF Format is the 64-bit ELF architecture.
- - LSB executable and LSB shared objects
-  + this one depends mainly about the PIE which means the `position-independent code` or the `position-independent executable`
+*** this means that it's an ELF file Format and you can find more information on the appendix, I will link all the Wikipedia articles of these maybe if it's esoteric to you.
+*** And 64-bit means the ELF Format is the 64-bit ELF architecture.
+** LSB executable and LSB shared objects
+*** this one depends mainly about the PIE which means the `position-independent code` or the `position-independent executable`
 * x86-64, version 1 (SYSV)
- - x86-64
-  + This one means the architure of the process is the x86-64.
- - version 1 (SYSV)
-  + I am not sure about this one, but I think it means the version of the ELF File Format, it adds the (SYSV) which confuses me and the SYSV means the system 5 which is UNIX System.
+** x86-64
+*** This one means the architure of the process is the x86-64.
+** version 1 (SYSV)
+*** I am not sure about this one, but I think it means the version of the ELF File Format, it adds the (SYSV) which confuses me and the SYSV means the system 5 which is UNIX System.
 * dynamically linked
 * interpreter /lib64/ld-linux-x86-64.so.2
- - This one means it has been linked with /lib64/ld-linux-x86-64.so.2 after compilation with whatever compiler it is.
+** This one means it has been linked with /lib64/ld-linux-x86-64.so.2 after compilation with whatever compiler it is.
 * BuildID[sha1]=c1f484166af165c71e71e8e0e5ebd8f9d6300f0a
- - this one I believe it’s the hash checksum of the file
+** this one I believe it’s the hash checksum of the file
 * for GNU/Linux 3.2.0
- - this one means the application is for or compiled on the kernel version 3.2.0 
+** this one means the application is for or compiled on the kernel version 3.2.0 
 * not stripped
- - Mainly means it's compiled with the option `-s` in GCC compiler, and this means it removed some useful for reversing information from the binary, like the name of the functions, for example.
+** Mainly means it's compiled with the option `-s` in GCC compiler, and this means it removed some useful for reversing information from the binary, like the name of the functions, for example.
  
 Mainly what interest us here is if it is stripped or not, if it is then we know we will find hard time reversing it.
 
