@@ -42,7 +42,7 @@ What can we learn from this output? let's deconstruct it:
 * for GNU/Linux 3.2.0
 	* this one means the application is for or compiled on the kernel version 3.2.0 
 * not stripped
-	* Mainly means it's compiled with the option `-s` in GCC compiler, and this means it removed some useful for reversing information from the binary, like the name of the functions, for example.
+	* Mainly means it's not compiled with the option `-s` in GCC compiler, and this means it didn't remove some useful informations for reversing from the binary, like the name of the functions, for example.
  
 Mainly what interest us here is if it is stripped or not, if it is then we know we will find hard time reversing it.
 
