@@ -216,7 +216,7 @@ the letter just beside it is the purpose of the data, you can find the meaning o
 in this section I won't use the easyAF crackme, because it's not that easy to read the disassembly of that binary.
 
 so here I created a really simple crackme, here is the source code in .c:
-```
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -239,7 +239,7 @@ here is easyAH means easy as hell.
 
 and we run it on a disassembler such as objdump
 `objdump -d -M intel easyAH | grep \<main\>\: -A 36`
-```as
+```
 00000000000011c9 <main>:
     11c9: f3 0f 1e fa           endbr64 
     11cd: 55                    push   rbp
@@ -281,20 +281,20 @@ and we run it on a disassembler such as objdump
 
 Let's start from the beginning to the end of the disassembly code with the help of the source code.
 
-```as
+```
     push   rbp
     mov    rbp,rsp
 ```
 
 This part is called the Prolog, which means the stack reserves a space for a function, in our case it's main.
 
-```as
+```
     sub    rsp,0x30
 ```
 
 Whenever I see this instruction on assembly code, meaning the sub rsp, something, I know it's allocating space, and mainly it means an array of something either `char` or `int` or whatever.
 and in our case it's the:
-```as
+```
   char name[32];
 ```
 
@@ -309,7 +309,7 @@ When I see these instructions, I know there is a text to be printed on the scree
 One warning, you might come from the x86 architecture, and you might find a difference between the way you used to see it and this way.
 
 in the x86 the text would be pushed on the stack instead of being loaded in a register, this would look something like
-```as
+```
  push [rip+0xe19]
  call 10b0 <printf@plt>
 ```
@@ -327,7 +327,7 @@ and in our code it's the equivalent of the:
 
 and then there is the scanf function:
 
-```as
+```
  lea    rax,[rbp-0x30]
  mov    rsi,rax
  lea    rdi,[rip+0xe13]
@@ -344,7 +344,7 @@ in the source code, it is:
 
 then we use the strcmp function like here:
 
-```as
+```
  lea    rax,[rbp-0x30]
  lea    rsi,[rip+0xe01]       
  mov    rdi,rax
@@ -353,7 +353,7 @@ then we use the strcmp function like here:
 
 here the code is mainly like
 
-```as
+```
  lea    rdi,[rbp-0x30]
  lea    rsi,[rip+0xe01]   
  call   10c0 <strcmp@plt>
@@ -369,7 +369,7 @@ in the code it is this line sloc:
 
 then in this assembly code it is like
 
-```as
+```
  test   eax,eax
  jne    1232 <main+0x69>
  lea    rdi,[rip+0xdf2]        
