@@ -402,12 +402,12 @@ so let's recap all the instructions we need to understand:
 # Appendix
 
 here are interesting Wikipedia articles for beginners:
-[https://en.wikipedia.org/wiki/Stripped_binary]
-https://en.wikipedia.org/wiki/Debug_symbol
-https://en.wikipedia.org/wiki/Symbol_table
-https://en.wikipedia.org/wiki/Linux_Standard_Base
-https://en.wikipedia.org/wiki/Position-independent_code
-https://en.wikipedia.org/wiki/Library_(computing)#Shared_libraries
-https://en.wikipedia.org/wiki/X86-64
-https://en.wikipedia.org/wiki/Data_segment
-https://en.wikipedia.org/wiki/Stack-based_memory_allocation
+(https://en.wikipedia.org/wiki/Stripped_binary)
+(https://en.wikipedia.org/wiki/Debug_symbol)
+(https://en.wikipedia.org/wiki/Symbol_table)
+(https://en.wikipedia.org/wiki/Linux_Standard_Base)
+(https://en.wikipedia.org/wiki/Position-independent_code)
+(https://en.wikipedia.org/wiki/Library_(computing)#Shared_libraries)
+(https://en.wikipedia.org/wiki/X86-64)
+(https://en.wikipedia.org/wiki/Data_segment)
+(https://en.wikipedia.org/wiki/Stack-based_memory_allocation)
